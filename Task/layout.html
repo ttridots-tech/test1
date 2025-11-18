@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout with CSS</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="brand">
+                <img src="css-3.png" alt="Image not found" class="logo">
+                <h2>CSS</h2>
+            </div>
+            <div class="nav-items">
+                <div class="nav-list">
+                    <p> <span style="color: rgb(255, 255, 255);">Home</span></p>
+                    <p>About</p>
+                    <p>Service</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="parent">
+        <div class="sidebar-list">
+            <h2>Food Court</h2>
+            <a href="#">Juice</a>
+            <a href="#">Veg</a>
+            <a href="#">Non-Veg</a>
+        </div>
+        <div class="parent-container">
+            <div class="slider">
+                <img src="Butter Chicken.webp" class="slide-img" />
+                <img src="Chicken Wrap.jpg" class="slide-img" />
+                <img src="Grilled Sandwich.jpg" class="slide-img" />
+
+                <div class="dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+
+            <div class="sample">
+                <div class="card">
+                    <img src="Biriyani.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Spicy Chicken Biryani</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Butter Chicken.webp" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Butter Chicken</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Chicken Wrap.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Chicken Wrap</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Crispy French Fries.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Crispy French Fries</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Fried Prawns.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Fried Prawns</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Grilled Sandwich.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Grilled Sandwich</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Paneer Tikka.png" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Paneer Tikka</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Noodles.jpg" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Noodles</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Margherita-Pizza.webp" alt="Card Image" class="card-img">
+                    <div class="box">
+                        <p class="title">Margherita Pizza</p>
+                        <p class="price">Rs.150</p>
+                        <p class="content">A fragrant rice dish cooked with tender chicken, rich spices, caramelized
+                            onions,
+                            and fresh herbs for a bold, aromatic flavor.</p>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star-fill" style="color:#8A8A8A; font-size:12px;"></i>
+                        <i class="bi bi-star" style="color: #8A8A8A;font-size:12px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; Your Website 2017 </p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slide-img');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(i) {
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+
+            slides[i].classList.add('active');
+            dots[i].classList.add('active');
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function goToSlide(i) {
+            index = i;
+            showSlide(index);
+        }
+
+        setInterval(nextSlide, 1500); // Auto slide every 3 seconds
+    </script>
+
+
+</body>
+
+</html>

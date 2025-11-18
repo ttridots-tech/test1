@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Expense Tracker | Smart Budget Manager</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Expense Tracker</a>
+            <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <h1>Track Your Spending Smartly</h1>
+            <p class="lead mt-3">Stay on top of your finances with real-time expense tracking and detailed analytics.
+            </p>
+            <div class="mt-4">
+                <a href="#features" class="btn btn-lg me-2 my-4"><i class="bi bi-lightning-charge-fill me-2"></i>Explore
+                    Features</a>
+                <a href="#contact" class="btn btn-lg"><i class="bi bi-envelope-fill me-2"></i>GetStarted</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm p-4 border-10 h-100">
+                        <i class="bi bi-wallet2 display-4 mb-3"></i>
+                        <h5 class="fw-bold">Track Expenses</h5>
+                        <p>Log daily transactions and categorize them with an intuitive, mobile-friendly interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm p-4 border-10 h-100">
+                        <i class="bi bi-bar-chart-line display-4 mb-3"></i>
+                        <h5 class="fw-bold">Visual Analytics</h5>
+                        <p>View detailed reports and charts to understand where your money goes each month.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm p-4 border-10 h-100">
+                        <i class="bi bi-shield-lock display-4 mb-3"></i>
+                        <h5 class="fw-bold">Secure Data</h5>
+                        <p>Your data is encrypted and safely stored using MySQL and Spring Boot backend services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Affordable Plans</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center feature-card shadow-sm border-10 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Free</h5>
+                            <h2 class="my-3">$0</h2>
+                            <ul class="list-unstyled">
+                                <li>Track daily expenses</li>
+                                <li>Basic analytics</li>
+                                <li>Email reports</li>
+                            </ul>
+                            <button class="btn mt-3">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center feature-card shadow-sm b-10 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pro</h5>
+                            <h2 class="my-3">$9/mo</h2>
+                            <ul class="list-unstyled">
+                                <li>Advanced analytics</li>
+                                <li>Cloud sync</li>
+                                <li>Export to Excel</li>
+                            </ul>
+                            <button class="btn mt-3">Upgrade</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center feature-card shadow-sm border-10 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Enterprise</h5>
+                            <h2 class="my-3">$29/mo</h2>
+                            <ul class="list-unstyled">
+                                <li>Multi-user access</li>
+                                <li>Priority support</li>
+                                <li>Custom integrations</li>
+                            </ul>
+                            <button class="btn mt-3">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="shadow-sm p-4 bg-white rounded">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+                        <button class="btn w-100"><i class="bi bi-send-fill me-2"></i>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Monthly Expense Tracker | Designed by <strong>Mohamed Ali Najmudeen</strong></p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="bi bi-github fs-5"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-envelope-fill fs-5"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

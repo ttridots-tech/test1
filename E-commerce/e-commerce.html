@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Tailwind E-Commerce</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-[#fff] shadow-lg border-b-4 border-[#888888]">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#" class="text-black font-bold text-2xl">ShopEase</a>
+      <button class="text-black md:hidden text-2xl"><i class="bi bi-list"></i></button>
+
+      <ul class="hidden md:flex space-x-8 text-black font-medium">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Products</a></li>
+        <li><a href="#" class="hover:underline">My Cart</a><i class="bi bi-cart ms-2"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-[#000000] to-[#000000] text-white text-center py-24">
+    <h1 class="text-4xl md:text-5xl font-bold">Welcome to ShopEase</h1>
+    <p class="mt-4 text-lg">Your one-stop shop for the latest gadgets and fashion!</p>
+    <a href="#products"
+      class="inline-block mt-6 bg-white text-[#000000] px-6 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-white border-2 border-white transition">Shop
+      Now</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 container mx-auto px-4">
+    <h2 class="text-center text-3xl font-bold text-[#000000] mb-12">Our Products</h2>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="67b6fc6ae012de2c7900fde1_AC demo_converted.webp" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Air Conditioner</h3>
+          <p class="text-gray-500 mt-1">Rs.30,000</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="yamaha-mt-15-standard-20241759582770305.avif" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">MT V-15 Black with Gold</h3>
+          <p class="text-gray-500 mt-1">Rs.1,90,000</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="ICE_STORM_DLX_1200x.webp" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">MT V-15 Blue With Black</h3>
+          <p class="text-gray-500 mt-1">Rs.1,75,000</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="Toad321500X1500Blue1.webp" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Wireless Mouse</h3>
+          <p class="text-gray-500 mt-1">Rs.600</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="premium_photo-1664392147011-2a720f214e01.jpg" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">HandBag</h3>
+          <p class="text-gray-500 mt-1">Rs.1,200</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="pexels-photo-90946.webp" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">DSLR Camera</h3>
+          <p class="text-gray-500 mt-1">Rs.29,999</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="dummy-chronograph-watch.jpg" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Luxury Watch</h3>
+          <p class="text-gray-500 mt-1">Rs.18,000</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+        <img src="1.jpg" alt="Product" class="w-full h-64 object-cover rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Back Pack</h3>
+          <p class="text-gray-500 mt-1">Rs.850</p>
+          <button
+            class="mt-4 bg-[#000000] text-white px-5 py-2 rounded-md hover:bg-white hover:text-[#000000] border border-[#000000] transition">Add
+            to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#000000] text-white text-center py-6">
+    <p>&copy; 2025 ShopEase | All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
